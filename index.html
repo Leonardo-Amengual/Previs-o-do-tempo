@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Previsão do tempo!</title>
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/estilo-geral.css">
     <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/clima.css">
     <script src="js/scripts.js" defer></script>
     <!-- fontes do google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,12 +38,15 @@
             <h2>
                 <i class="fa-solid fa-location-dot"></i>
                 <span id="cidade">Gravatai</span>
-                <img src="" alt="Bandeira do país" id="pais">
+                <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1200px-Flag_of_Brazil.svg.png" 
+                alt="" 
+                id="pais">
             </h2>
             <p class="temperatura"><span>32</span>&deg;C</p>
-            <div class="descricao-container">
+            <div id="descricao-container">
                 <p id="descricao">Nublado</p>
-                <img src="" alt="condições climáticas" id="icone-pais">
+                <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="" id="icone-pais">
             </div>
             <div id="detalhes-container">
                 <p id="humidade">

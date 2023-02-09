@@ -2,7 +2,8 @@
     padding: 0;
     margin: 0;
     font-family:"Ubuntu", sans-serif;
-
+    transition: all 0.2s;
+    border-box: none;
 }
 
 body{
@@ -15,7 +16,18 @@ body{
 
 .hide {
     display: none;
-} 
+}
+
+.hide-0h{
+    height: 0;
+}
+.hide-15h{
+    height: 15%;
+}
+
+.over-hidden{
+    overflow: hidden;
+}
 
 .container{
     background-color: #594cee;

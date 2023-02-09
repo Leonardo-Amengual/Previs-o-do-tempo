@@ -48,3 +48,10 @@
     margin: .6rem;
     padding: .6rem;
 }
+
+.temperatura{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 900;
+    padding-top: 2rem;
+}

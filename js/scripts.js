@@ -41,7 +41,6 @@ const getWeatherdata = async (city) => {
     const apiWeatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apikey}&lang=pt_br`;
     const res = await fetch(apiWeatherURL);
     const data = await res.json();
-    console.log(data);
     return data;
 };
 
@@ -61,6 +60,7 @@ const showWeatherData = async (city) => {
         "src",
         `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`
     );
+    
     countryElement.setAttribute("src", apiCountryURL + data.sys.country);
     umidityElement.innerText = `${data.main.humidity}%`;
     windElement.innerText = `${data.wind.speed}km/h`;

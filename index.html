@@ -1,65 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Previsão do tempo!</title>
-    <link rel="stylesheet" href="css/estilo-geral.css">
-    <link rel="stylesheet" href="css/formulario.css">
-    <link rel="stylesheet" href="css/clima.css">
+    <link rel="stylesheet" href="css/estilo-geral.css" />
+    <link rel="stylesheet" href="css/formulario.css" />
+    <link rel="stylesheet" href="css/clima.css" />
     <script src="js/scripts.js" defer></script>
     <!-- fontes do google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kalam:wght@300&family=Ubuntu:wght@300&display=swap"
-        rel="stylesheet">
-    <!-- font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kalam:wght@300&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
-
-    <div class="container">
-        <div class="form">
-            <h3>Veja o clima de uma cidade!</h3>
-            <div class="form-input-container">
-                <input type="text" placeholder="Qual o nome da cidade?" id="cidade-input">
-                <button id="search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                  </button>
-            </div>
+  <body>
+    <div class="container over-hidden" style="height: 8%;">
+      <div class="form">
+        <h3>Digite uma cidade</h3>
+        <div class="form-input-container">
+          <input
+            type="text"
+            placeholder="Qual o nome da cidade?"
+            id="cidade-input"
+          />
+          <button id="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
         </div>
-        <div id="data-clima">
-            <h2>
-                <i class="fa-solid fa-location-dot"></i>
-                <span id="cidade">Gravatai</span>
-                <img 
-                src="https://countryflagsapi.com/png/br" 
-                alt="" 
-                id="pais">
-            </h2>
-            <p class="temperatura"><span>32</span>&deg;C</p>
-            <div id="descricao-container">
-                <p id="descricao">Nublado</p>
-                <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="" id="icone-pais">
-            </div>
-            <div id="detalhes-container">
-                <p id="humidade">
-                    <i class="fa-solid fa-droplet"></i>
-                    <span>48%</span>
-                </p>
-                <p id="vento">
-                    <i class="fa-solid fa-wind"></i>
-                    <span>13Km/h</span>
-                </p>
-            </div>
+      </div>
+      <div class="show-temp hide-0h">
+        <div id="data-clima ">
+          <h2 class="hide">
+            <i class="fa-solid fa-location-dot"></i>
+            <span id="cidade"></span>
+            <img src="https://countryflagsapi.com/png/br" alt="" id="pais" />
+          </h2>
+          <p class="temperatura"><span></span>&deg;C</p>
+          <div id="descricao-container">
+            <p id="descricao"></p>
+            <img
+              src="http://openweathermap.org/img/wn/01d@2x.png"
+              alt=""
+              id="icone-pais"
+            />
+          </div>
+          <div id="detalhes-container">
+            <p id="humidade">
+              <i class="fa-solid fa-droplet"></i>
+              <span></span>
+            </p>
+            <p id="vento">
+              <i class="fa-solid fa-wind"></i>
+              <span></span>
+            </p>
+          </div>
         </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
